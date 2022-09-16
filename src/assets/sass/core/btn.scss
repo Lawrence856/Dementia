@@ -1,0 +1,49 @@
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 19px 40px;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+    border-width: 2px;
+    border-style: solid;
+    max-width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
+    &-primary {
+        color: $white;
+        background-color: $green;
+        border-color: $green;
+    }
+    &-secondary {
+        color: $white;
+        background-color: $purple;
+        border-color: $purple;
+        &:hover {
+            transform: scale(0.9);
+        }
+    }
+    &-bordered {
+        &.btn {
+            &-primary {
+                color: $green;
+                background-color: transparent;
+                &:hover {
+                    color: $white;
+                    background-color: $green;
+                }
+            }
+            &-secondary {
+                color: $purple;
+                background-color: transparent;
+                &:hover {
+                    color: $white;
+                    background-color: $purple;
+                }
+            }
+        }
+    }
+}

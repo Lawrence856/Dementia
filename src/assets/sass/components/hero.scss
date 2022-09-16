@@ -1,0 +1,53 @@
+.hero {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        background: url('/img/svg/hero-bg.svg') no-repeat right 100px bottom;
+        align-items: center;
+    }
+    &__title {
+        font-size: 56px;
+        font-weight: 700;
+        color: $green;
+    }
+    &__links {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        text-transform: uppercase;
+        color: $gray;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+    &__desc {
+        padding: 32px;
+        color: $white;
+        background-color: $green;
+        border-radius: 12px 50px;
+        line-height: 1.75;
+    }
+    &__puzzle {
+        margin-top: 75px;
+    }
+    &__left {
+        flex: 1 0;
+        max-width: 536px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 1 0;
+        max-width: 474px;
+        margin: 145px 0 50px;
+        &-link {
+            margin-top: 30px;
+            text-transform: uppercase;
+        }
+    }
+}

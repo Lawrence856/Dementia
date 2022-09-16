@@ -1,0 +1,17 @@
+.news-card {
+    &__img {
+        width: 100%;
+    }
+    &__title {
+        margin-top: 20px;
+        font-weight: 700;
+    }
+    &__desc {
+        margin-top: 5px;
+        color: $gray;
+    }
+    &__link {
+        color: $green;
+        margin-top: 20px;
+    }
+}

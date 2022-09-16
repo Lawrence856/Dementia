@@ -1,0 +1,27 @@
+/**  
+ * Core
+ */
+@import './core/variables.scss';
+@import './core/fonts.scss';
+@import './core/reset.scss';
+@import './core/global.scss';
+@import './core/btn.scss';
+@import './core/mobile-menu.scss';
+
+/**  
+ * Components
+ */
+@import './components/header.scss';
+@import './components/hero.scss';
+@import './components/volunteers.scss';
+@import './components/news.scss';
+@import './components/news-card.scss';
+@import './components/contacts.scss';
+@import './components/about-fund.scss';
+@import './components/footer.scss';
+
+/**
+ * Breakpoints
+ */
+
+@import './core/breakpoints.scss';

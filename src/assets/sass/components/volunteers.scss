@@ -1,0 +1,44 @@
+.volunteers {
+    margin-top: 68px;
+    &__desc {
+        margin-top: 20px;
+    }
+    &__link {
+        margin-top: 30px;
+    }
+    &__img {
+        width: 100%;
+        &-desc {
+            max-width: 400px;
+            font-size: 28px;
+            font-weight: 500;
+            margin-top: 40px;
+            line-height: 1;
+            .icon {
+                display: inline;
+                vertical-align: sub;
+                margin-left: -5px;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &__left {
+        position: relative;
+        margin-right: 50px;
+        padding: 110px 0 0 110px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 345px;
+            width: 288px;
+            background-image: url('/img/svg/puzzle-blue.svg');
+        }
+    }
+    &__right {
+        min-width: 620px;
+    }
+}
