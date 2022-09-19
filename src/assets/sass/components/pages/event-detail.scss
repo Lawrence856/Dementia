@@ -1,0 +1,57 @@
+.event-detail {
+    margin-bottom: 120px;
+    &__wrapper {
+        display: flex;
+    }
+    &__content {
+        flex: 1;
+        margin-right: 40px;
+        &-title {
+            font-size: 46px;
+            color: $green;
+            line-height: 1.2;
+        }
+        &-date {
+            font-size: 24px;
+            font-weight: 700;
+            color: $gray;
+            margin-top: 15px;
+        }
+        &-link {
+            margin: 40px 0 50px;
+        }
+        &-desc {
+            p {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    &__aside {
+        flex: 0;
+        min-width: 400px;
+        &-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: $green;
+            margin-bottom: 40px;
+        }
+        &-list {
+            display: grid;
+            gap: 40px;
+            & > .event-card {
+                &:nth-child(2n + 1) {
+                    background: url('../img/svg/event-card-bg-2.svg') no-repeat
+                            center / cover,
+                        $light_green;
+                }
+                &:nth-child(2n + 2) {
+                    background: url('../img/svg/event-card-bg-1.svg') no-repeat
+                            center / cover,
+                        $light_green;
+                }
+            }
+        }
+    }
+}

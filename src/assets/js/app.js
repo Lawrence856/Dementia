@@ -3,4 +3,5 @@ $(function() {
     initFormValidation();
     initFormField();
     initDropdown();
+    initMask();
 });

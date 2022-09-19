@@ -12,3 +12,15 @@
         background-size: 26px;
     }
 }
+
+.success-modal {
+    .modal__content {
+        text-align: center;
+    }
+    &__message {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 30px;
+    }
+}
