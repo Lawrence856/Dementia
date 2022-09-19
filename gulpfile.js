@@ -43,10 +43,10 @@ const src = {
     svg: paths.src + '/assets/svg/*.svg',
 };
 const dist = {
-    img: paths.dist + '/img/',
-    css: paths.dist + '/css/',
-    js: paths.dist + '/js/',
-    fonts: paths.dist + '/fonts/',
+    img: paths.dist + '/assets/img/',
+    css: paths.dist + '/assets/css/',
+    js: paths.dist + '/assets/js/',
+    fonts: paths.dist + '/assets/fonts/',
 };
 
 /**
