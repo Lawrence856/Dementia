@@ -1,0 +1,20 @@
+.event-card {
+    display: flex;
+    flex-direction: column;
+    background-color: $light_green;
+    padding: 20px;
+    height: 100%;
+    min-height: 280px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &__date {
+        display: block;
+        margin-bottom: 40px;
+    }
+    &__title {
+        font-size: 16px;
+        margin-bottom: auto;
+        line-height: 1.35;
+        max-width: 270px;
+    }
+}

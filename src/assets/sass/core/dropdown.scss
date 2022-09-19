@@ -1,0 +1,55 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+    position: relative;
+    &__btn {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        background-color: transparent;
+        border-width: 0 0 1px 0;
+        border-color: $green;
+        font-weight: 700;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        z-index: 1;
+        list-style-type: none;
+        background-color: $white;
+        &-item {
+            &:not(:last-child) {
+                border-bottom: 1px solid $light-gray;
+            }
+        }
+        &-link {
+            display: block;
+            padding: 10px 20px;
+        }
+    }
+    &.show {
+        .dropdown {
+            &__btn {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &:not(.show) {
+        .dropdown {
+            &__list {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+<div id="become-volunteer-modal" class="modal become-volunteer-modal">
+    <div class="modal__content">
+        <form class="form default-form-validator" id="become-volunteer" action="#">
+            <h3 class="form-title">Стать волонтером</h3>
+            <div class="form-field-group">
+                <div class="form-field">
+                    <input
+                        class="form-control"
+                        id="volunteer-first-name"
+                        name="first_name"
+                        type="text"
+                        required>
+                    <label class="form-label" for="volunteer-first-name">Имя <span class="required">*</span></label>
+                </div>
+                <div class="form-field">
+                    <input
+                        class="form-control"
+                        id="volunteer-seccond-name"
+                        name="seccond_name"
+                        type="text"
+                        required>
+                    <label class="form-label" for="volunteer-seccond-name">Фамилия <span class="required">*</span></label>
+                </div>
+                <div class="form-field">
+                    <input
+                        class="form-control"
+                        id="volunteer-phone"
+                        name="phone"
+                        type="tel"
+                        required>
+                    <label class="form-label" for="volunteer-phone">Телефон <span class="required">*</span></label>
+                </div>
+                <div class="form-field">
+                    <input
+                        class="form-control"
+                        id="volunteer-email"
+                        name="email"
+                        type="email"
+                        required>
+                    <label class="form-label" for="volunteer-email">E-mail <span class="required">*</span></label>
+                </div>
+                <div class="form-field-checkbox">
+                    <input
+                        class="form-control-checkbox"
+                        type="checkbox"
+                        name="accept_rules"
+                        id="volunteer-accept-rules"
+                        required
+                        checked>
+                    <label
+                        class="form-label-checkbox"
+                        for="volunteer-accept-rules">
+                        Я даю согласие на обработку персональных данных
+                    </label>
+                </div>
+                <div class="form-field-checkbox">
+                    <input
+                        class="form-control-checkbox"
+                        type="checkbox"
+                        name="sber_employee"
+                        id="volunteer-sber-employee">
+                    <label
+                        class="form-label-checkbox"
+                        for="volunteer-sber-employee">
+                        Я являюсь сотрудником группы компаний Сбера
+                    </label>
+                </div>
+            </div>
+            <button class="btn btn-bordered btn-primary" type="submit">Стать волонтёром</button>
+        </form>
+    </div>
+</div>

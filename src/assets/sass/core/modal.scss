@@ -1,0 +1,14 @@
+.modal {
+    padding: 50px;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: 600px;
+    a.close-modal {
+        width: calc(26px + 15px * 2);
+        height: calc(26px + 15px * 2);
+        top: 15px;
+        right: 15px;
+        background-image: url('../img/svg/cross.svg');
+        background-size: 26px;
+    }
+}

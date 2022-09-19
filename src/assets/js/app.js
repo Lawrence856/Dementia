@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(function() {
     initMobileMenu();
-});
-$(document).on('click', function() {
-    console.log('click other func');
+    initFormValidation();
+    initFormField();
+    initDropdown();
 });

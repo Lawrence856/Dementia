@@ -1,0 +1,46 @@
+.event-filters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    &__list {
+        padding: 0 15px;
+        margin: 0 -15px;
+        list-style-type: none;
+        max-width: calc(100% + 30px);
+        overflow-y: auto;
+        white-space: nowrap;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        &-item {
+            display: inline-block;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            &:first-child {
+                margin-right: 40px;
+                .event-filters__list-link {
+                    padding: 10.5px 32px;
+                    color: $white;
+                    background-color: $green;
+                }
+            }
+        }
+        &-link {
+            display: block;
+            padding: 10.5px 0;
+            border-radius: 16px;
+            text-transform: uppercase;
+            transition: all 0.2s ease-in-out;
+            &:hover,
+            &.active {
+                text-decoration: none;
+                color: $green;
+            }
+        }
+    }
+    .dropdown {
+        margin-left: auto;
+        min-width: 190px;
+    }
+}

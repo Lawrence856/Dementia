@@ -6,6 +6,9 @@
 @import './core/reset.scss';
 @import './core/global.scss';
 @import './core/btn.scss';
+@import './core/form.scss';
+@import './core/modal.scss';
+@import './core/dropdown.scss';
 @import './core/mobile-menu.scss';
 
 /**  
@@ -18,10 +21,17 @@
 @import './components/news-card.scss';
 @import './components/contacts.scss';
 @import './components/about-fund.scss';
+@import './components/event-filters.scss';
+@import './components/event-list.scss';
+@import './components/event-card.scss';
 @import './components/footer.scss';
+
+/**
+ * Modal
+ */
+@import './components/modal/become-volunteer.scss';
 
 /**
  * Breakpoints
  */
-
 @import './core/breakpoints.scss';
