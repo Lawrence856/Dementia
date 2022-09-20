@@ -6,7 +6,8 @@
 
 @media screen and (min-width: $md-min-breackpoint) {
     .header .burger,
-    .mobile-menu__logo {
+    .mobile-menu__logo,
+    .mobile-menu__close {
         display: none;
     }
 }
@@ -46,6 +47,53 @@
             }
         }
     }
+    .mobile-menu {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 50;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        transition: all 0.2s ease-in-out;
+        &:not(.show) {
+            visibility: hidden;
+            opacity: 0;
+        }
+        &__content {
+            background-color: #fff;
+            overflow-y: auto;
+        }
+        &__close {
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: transparent;
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: $gray;
+                margin: 15px;
+            }
+            &::after {
+                transform: rotate(-45deg);
+            }
+            &::before {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
     .volunteers {
         &__left {
             padding: 0;
