@@ -18,3 +18,11 @@
         max-width: 270px;
     }
 }
+a.event-card {
+    &:hover {
+        text-decoration: none;
+        .event-card__title {
+            text-decoration: underline;
+        }
+    }
+}
